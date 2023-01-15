@@ -15,7 +15,8 @@
 .features,
 .abouts,
 .achievements,
-.sponspors{
+.sponspors,
+.footer{
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
@@ -79,6 +80,7 @@
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
 }
 .banner-img img{
     width: 100%;  
@@ -112,6 +114,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+
 }
 .features-info{
     width: 100%;
@@ -201,6 +204,7 @@
     color: #ffffff;
     top: -120px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .about-btn p{
     font-size: 25px;
@@ -234,6 +238,7 @@
     padding: 40px;
     color: var(--secondary-color); 
     transition: ease-out 2s;
+    cursor: pointer;
      
 }
 .achievment h2{
@@ -251,7 +256,7 @@
 
 /* sponspors section start */
 .sponspors{
-    margin-bottom: 500px;
+    margin-bottom: 110px;
    
 }
 .sponspors-title{
@@ -275,7 +280,27 @@
 }
 .sponspors-logo img{
     filter: grayscale(100%);
+    transition: ease 1s;
+    cursor: pointer;
 
+}
+.sponspors-logo img:hover{
+    transform: scale(1.2);
+}
+
+
+/* footer section style start */
+footer{
+    margin-bottom: 150px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 40px 0;
+    border-radius: 5px;
+    color: #424242;
+    font-size: 23px;
 }
 /*----------------------------------
    media query for mobile 
