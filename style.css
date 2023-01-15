@@ -5,15 +5,17 @@
 }
 
 :root{
-
     --primary-color: #131313;
     --secondary-color: #727272;
     --btn-color: #FF900E;
+    --header-bg-color: #fff4e7;
+    --mainbody-bg-color: #ffffff; 
 }
+
 /* common style */
 .header-section, 
 .features,
-.abouts,
+.services,
 .achievements,
 .sponspors,
 .footer{
@@ -22,9 +24,12 @@
     width: 100%;
  }
 
-/* header style start */
+
+/*-----------------------
+    header style start
+------------------------*/
 .header{
-    background-color: #fff4e7;
+    background-color: var(--header-bg-color);
     width: 100%;
     height: 1250px;
 }
@@ -75,17 +80,17 @@
     background-color: var(--btn-color);
     padding: 20px 40px;
     border: 0;
-    color: #ffffff;
+    color: var(--mainbody-bg-color);
     border-radius: 5px;
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: 600;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--mainbody-bg-color);
     cursor: pointer;
     transition: ease-out 1s;
 }
 .primary-btn:hover{
-    background-color: #ffffff;
+    background-color: var(--mainbody-bg-color);
     color: var(--btn-color);
     border: 1px solid var(--btn-color);  
 }
@@ -99,14 +104,13 @@
 
 
 
-/* -----------------------------
+/* -------------------------
     main-body style start  
 ---------------------------*/
 .main-body{
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--mainbody-bg-color);
 }
-
 
 /* features style start */
 .features{
@@ -147,22 +151,23 @@
     line-height: 26px;
     margin-bottom: 20px;
 }
+/* features style end */
 
 
-/* about section style start */
-.abouts{
+/* service section style start */
+.services{
     display: flex;
     gap: 100px;
     padding-top: 50px;
     width: 100%;
 }
-.about{
+.service{
     max-width: 586px;
     padding-top: 30px;
     height: 982px;
     width: 100%;
 }
-.about-title{
+.service-title{
     border-left: 5px solid var(--btn-color);
     color: var(--primary-color);
     font-size: 45px;
@@ -170,24 +175,24 @@
     margin-bottom: 15px;
     padding-left: 15px;
 }
-.about-subtitle{
+.service-subtitle{
     line-height: 26px;
     color: var(--secondary-color);
     margin-bottom: 30px;
 }
-.about-img{
+.service-img{
     max-width: 800%;
     height: 1059px;
     width: 100%;
 }
-.about-img img{
+.service-img img{
     width: 100%;
     height: 95%;
 }
 .feature-info{
     width: 100%;
     padding: 30px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.199);
     border-radius: 8px;
     margin-bottom: 20px;
 
@@ -202,7 +207,7 @@
     line-height: 26px;
     color: var(--secondary-color);
 }
-.about-btn{
+.service-btn{
     position: relative;
     padding: 45px 40px;
     font-size: 50px;
@@ -210,20 +215,21 @@
     border: 0;
     border: 1px solid var(--btn-color);
     background-color: var(--btn-color);
-    color: #ffffff;
+    color: var(--mainbody-bg-color);
     top: -120px;
     border-radius: 5px;
     cursor: pointer;
 }
-.about-btn:hover{
-    background-color: #ffffff;
+.service-btn:hover{
+    background-color: var(--mainbody-bg-color);
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
     transition: all ease-in 1s;
 }
-.about-btn p{
+.service-btn p{
     font-size: 25px;
 }
+/* service section style end */
 
 
 /* achievement section start */
@@ -248,7 +254,7 @@
 }
 .achievment{
     text-align: center;
-    border: 1px solid #FF900E;
+    border: 1px solid var(--btn-color);
     border-radius: 8px;
     padding: 40px;
     color: var(--secondary-color); 
@@ -267,6 +273,7 @@
 .achievment:hover{
     transform: rotate(360deg);
 }
+/* achievement section end */
 
 
 /* sponspors section start */
@@ -302,6 +309,7 @@
 .sponspors-logo img:hover{
     transform: scale(1.2);
 }
+/* sponspors section end */
 
 
 /* footer section style start */
@@ -311,15 +319,21 @@ footer{
 .footer{
     width: 100%;
     text-align: center;
-    background-color: #FFF4E7;
+    background-color: var(--header-bg-color);
     padding: 40px 0;
     border-radius: 5px;
     color: #424242;
     font-size: 23px;
 }
-/*----------------------------------
-   media query for mobile 
------------------------------*/
+/* footer section style end */
+
+
+
+
+/*--------------------------------------
+   media query for mobile style start
+----------------------------------------*/
+
 @media only screen and (max-width:576px) {
 
     /* header style start */
@@ -363,21 +377,22 @@ footer{
     .features-info{
         text-align: center;
     }
+    /* features style end */
 
-    /* about section start */
-    .abouts{
+
+    /* service section start */
+    .services{
         flex-direction: column;
         margin-bottom: 120px;
-
     }
-    .about{
+    .service{
         width: 100%;
         margin-bottom: 20px;
     }
-    .about-title{
+    .service-title{
         margin-left: 10px;
     }
-    .about-subtitle{
+    .service-subtitle{
         margin: 0 10px;
     }
     .feature-info{
@@ -385,11 +400,13 @@ footer{
         text-align: center;
         
     }
-    .about-btn{
+    .service-btn{
         top: 20px;
         margin: 0 55px;
         padding: 20px 30px;
     }
+     /* service section end */
+
 
     /* achievement section start */
     .achievements{
@@ -400,6 +417,8 @@ footer{
         gap: 20px;
         margin-bottom: 0;
     }
+    /* achievement section end */
+
 
     /* sponspors section start */
     .sponspors{
@@ -413,7 +432,9 @@ footer{
         flex-direction: column;
         gap: 30px;
     }
+     /* sponspors section end */
 }
 
-
-
+/*--------------------------------------
+   media query for mobile style end
+----------------------------------------*/
