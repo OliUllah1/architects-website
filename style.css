@@ -11,7 +11,10 @@
     --btn-color: #FF900E;
 }
 /* common style */
-.header-section, .features{
+.header-section, 
+.features,
+.abouts,
+.achievements{
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
@@ -96,7 +99,6 @@
 
 /* features style start */
 .features{
-    width: 100%;
     padding-top: 80px;
     display: flex;
     gap: 50px;
@@ -134,12 +136,125 @@
     margin-bottom: 20px;
 }
 
+
+/* about section style start */
+.abouts{
+    display: flex;
+    gap: 100px;
+    padding-top: 50px;
+    width: 100%;
+}
+.about{
+    max-width: 586px;
+    padding-top: 30px;
+    height: 982px;
+    width: 100%;
+}
+.about-title{
+    border-left: 5px solid var(--btn-color);
+    color: var(--primary-color);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.about-subtitle{
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+.about-img{
+    max-width: 800%;
+    height: 1059px;
+    width: 100%;
+}
+.about-img img{
+    width: 100%;
+    height: 95%;
+}
+.feature-info{
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+.feature-info h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.feature-info p{
+    line-height: 26px;
+    color: var(--secondary-color);
+}
+.about-btn{
+    position: relative;
+    padding: 45px 40px;
+    font-size: 50px;
+    font-weight: 600;
+    border: 0;
+    background-color: var(--btn-color);
+    color: #ffffff;
+    top: -120px;
+    border-radius: 5px;
+}
+.about-btn p{
+    font-size: 25px;
+}
+
+
+/* achievement section start */
+.achievements{
+    padding-top: 100px;
+}
+.achievment-title{
+    color: var(--primary-color);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.achievment-subtitle{
+    color: var(--secondary-color);
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+.achievment-list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+.achievment{
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 40px;
+    color: var(--secondary-color); 
+    transition: transform 2s;
+     
+}
+.achievment h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.achievment p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.achievment:hover{
+    transform: rotate(360deg);
+}
 /*----------------------------------
    media query for mobile 
 -----------------------------*/
 @media only screen and (max-width:576px) {
 
     /* header style start */
+    .header{
+        height: 1100px;
+    }
     .navber{
         flex-direction: column;
         gap: 20px;
@@ -176,6 +291,27 @@
     }
     .features-info{
         text-align: center;
+    }
+
+    /* about section start */
+    .abouts{
+        flex-direction: column;
+        margin-bottom: 120px;
+
+    }
+    .about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .feature-info{
+        padding: 20px 0;
+        text-align: center;
+        
+    }
+    .about-btn{
+        top: 20px;
+        margin: 0 55px;
+        padding: 20px 30px;
     }
 
 }
