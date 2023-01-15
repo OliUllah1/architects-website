@@ -45,7 +45,7 @@
     align-items: center;
 }
 .menu li{
-    margin-left: 3rem;
+    margin-left: 4rem;
     list-style: none;
     flex-shrink: 0;
 }
@@ -53,7 +53,7 @@
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 .banner-info{
     text-align: center;
@@ -80,8 +80,16 @@
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: 600;
+    border: 1px solid #ffffff;
     cursor: pointer;
+    transition: ease-out 1s;
 }
+.primary-btn:hover{
+    background-color: #ffffff;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);  
+}
+
 .banner-img img{
     width: 100%;  
 }
@@ -200,11 +208,18 @@
     font-size: 50px;
     font-weight: 600;
     border: 0;
+    border: 1px solid var(--btn-color);
     background-color: var(--btn-color);
     color: #ffffff;
     top: -120px;
     border-radius: 5px;
     cursor: pointer;
+}
+.about-btn:hover{
+    background-color: #ffffff;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    transition: all ease-in 1s;
 }
 .about-btn p{
     font-size: 25px;
@@ -358,6 +373,12 @@ footer{
     .about{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .about-title{
+        margin-left: 10px;
+    }
+    .about-subtitle{
+        margin: 0 10px;
     }
     .feature-info{
         padding: 20px 0;
