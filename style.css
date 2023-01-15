@@ -352,6 +352,9 @@ footer{
         text-align: center;
         gap: 15px;
     }
+    .menu li{
+        margin-left: 0;
+    }
     .menu li a{
         font-size: 25px;
     }
@@ -393,7 +396,7 @@ footer{
         margin-left: 10px;
     }
     .service-subtitle{
-        margin: 0 10px;
+        margin: 20px 10px;
     }
     .feature-info{
         padding: 20px 0;
